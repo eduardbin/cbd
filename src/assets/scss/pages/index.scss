@@ -1,0 +1,85 @@
+.ba-intro {
+  background: url(../img/intro-bg.jpg) 50%;
+  background-size: cover;
+  height: 100vh;
+  color: #f7f8f3;
+  position: relative;
+}
+
+.ba-intro__header {
+  font-size: 55px;
+  margin-bottom: 0;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+
+  @include breakpoint(small only) {
+    font-size: 43px;
+  }
+}
+
+.ba-intro__subscribe {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  line-height: 75px;
+  letter-spacing: 0.28em;
+}
+
+.ba-intro__button {
+  margin-bottom: 23px;
+  margin-right: 23px;
+}
+
+.ba-intro__products {
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  color: #f7f8f3;
+  position: relative;
+  right: 8px;
+}
+
+.ba-intro__right-arrow {
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.ba-intro__arrow-down {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ba-intro__leftscribe {
+  position: absolute;
+  left: -47px;
+  bottom: 227px;
+  transform: rotate(-90deg);
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.08em;
+
+  &::before {
+    content: "";
+    border-bottom: 2px solid #fff;
+    width: 107px;
+    height: 0;
+    position: absolute;
+    top: 18px;
+    left: -137px;
+  }
+}
+
+/* section-product*/
+
+.ba-product {
+  background-color: $body-background;
+  padding-top: 100px;
+
+  &__we-are {
+    display: block;
+    margin: 0 auto 120px;
+  }
+}

@@ -1,0 +1,33 @@
+a,
+button {
+  transition: 0.3s ease-in;
+  transition-property: color, background-color, opacity;
+  svg {
+    fill: currentColor;
+  }
+}
+button,
+.button {
+  cursor: pointer;
+}
+
+.ba-button {
+  border: 1px solid #9db892;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  display: block;
+  max-width: 269px;
+  line-height: 68px;
+  padding-left: 38px;
+
+  &::after {
+    content: "";
+    border-bottom: 2px solid #f7f8f3;
+    width: 44px;
+    position: absolute;
+    top: 34px;
+    right: 39px;
+  }
+}
